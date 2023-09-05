@@ -6,6 +6,6 @@ public record StudentResponse(
     String cpf,
     String semestre,
     String turma
-)  {
-    
+)
+{    
 }

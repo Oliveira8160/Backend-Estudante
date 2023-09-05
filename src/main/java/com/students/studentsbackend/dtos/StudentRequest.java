@@ -16,6 +16,6 @@ public record StudentRequest(
 
     @NotBlank(message = "Turma não pode ser em branco")
     String turma
-) {
-    
+)
+{  
 }
