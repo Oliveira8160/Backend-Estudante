@@ -48,8 +48,8 @@ public class StudentService {
 
         try{
             var updateStudent = this.repository.getReferenceById(id);
-            updateStudent.setName(student.getName());
-            updateStudent.setCpf(student.getCpf());
+            updateStudent.setNome(student.getNome());
+            updateStudent.setCPF(student.getCPF());
             updateStudent.setSemestre(student.getSemestre());
             updateStudent.setTurma(student.getTurma());
             this.repository.save(updateStudent);

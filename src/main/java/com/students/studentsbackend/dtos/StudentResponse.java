@@ -2,8 +2,8 @@ package com.students.studentsbackend.dtos;
 
 public record StudentResponse(
     long id,
-    String name,
-    String cpf,
+    String nome,
+    String CPF,
     String semestre,
     String turma
 )

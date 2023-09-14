@@ -17,13 +17,13 @@ public class Student implements Serializable{
     private Long id;
 
     @Column(length = 1024,nullable = false,  name ="student_name")
-    private String name;
+    private String nome;
  
     private String turma;
 
     private String semestre;
     
-    private String cpf;
+    private String CPF;
 
     public Long getId() {
         return id;
@@ -33,12 +33,12 @@ public class Student implements Serializable{
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String name) {
+        this.nome = name;
     }
 
     public String getTurma() {
@@ -57,12 +57,12 @@ public class Student implements Serializable{
         this.semestre = semestre;
     }
 
-    public String getCpf() {
-        return cpf;
+    public String getCPF() {
+        return CPF;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public void setCPF(String cpf) {
+        this.CPF = cpf;
     }
 
     @Override

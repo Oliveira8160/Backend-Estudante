@@ -8,8 +8,8 @@ public class StudentMapper {
     
     public static Student toEntity(StudentRequest request) {
         Student student = new Student();
-        student.setName(request.name());
-        student.setCpf(request.cpf());
+        student.setNome(request.nome());
+        student.setCPF(request.CPF());
         student.setSemestre(request.semestre());
         student.setTurma(request.turma());
         return student;
@@ -17,8 +17,8 @@ public class StudentMapper {
 
     public static StudentResponse toDTO(Student student) {
         return new StudentResponse(student.getId(),
-                student.getName(),
-                student.getCpf(),
+                student.getNome(),
+                student.getCPF(),
                 student.getSemestre(),
                 student.getTurma());
     }
